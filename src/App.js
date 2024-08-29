@@ -1,9 +1,10 @@
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Hightlights from "./components/highliights/Hightlights";
 import Sidebar from "./components/Sidebar";
 import { useState } from "react";
+import AddProduct from "./pages.js/AddProduct";
 
 function App() {
   const [sidebar, setSidebar] = useState(true);
@@ -19,7 +20,10 @@ function App() {
       <div className="w-[100%] grid place-items-center">
         <div className="appgrid w-[100%] ">
           <Sidebar sidebar={sidebar} />
-          <Hightlights />
+          <Routes>
+            <Route path="/addproduct" element={<AddProduct />}></Route>
+            <Route path="/" element={<Hightlights />}></Route>
+          </Routes>
         </div>
       </div>
     </BrowserRouter>

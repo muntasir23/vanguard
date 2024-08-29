@@ -7,7 +7,7 @@ export default function Sidebar({ sidebar }) {
       <div
         className={`p-2 h-[100vh] fixed md:absolute md:top-0 bg-white z-50 w-full ${
           sidebar ? "sidebar" : "sidebar-open"
-        }` }
+        }`}
       >
         <p className="mt-5 font-bold text-[20px]">Dashboard</p>
         <div className="mt-[40px]">
@@ -33,7 +33,7 @@ export default function Sidebar({ sidebar }) {
             <li className="border-b">
               {" "}
               <Link
-                to="/"
+                to="/addproduct"
                 className="inline-block my-2 hover:bg-[#344029] hover:text-[#fffdd0] w-full py-2 rounded px-1"
               >
                 Product Detals
@@ -46,6 +46,15 @@ export default function Sidebar({ sidebar }) {
                 className="inline-block my-2 hover:bg-[#344029] hover:text-[#fffdd0] w-full py-2 rounded px-1"
               >
                 Invoices
+              </Link>{" "}
+            </li>
+            <li className="border-b">
+              {" "}
+              <Link
+                to="/"
+                className="inline-block my-2 hover:bg-[#344029] hover:text-[#fffdd0] w-full py-2 rounded px-1"
+              >
+                Costs
               </Link>{" "}
             </li>
           </ul>
