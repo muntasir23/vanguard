@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #f1f1f1;
+}
+
+.appgrid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 10px;
+}
+
+.highlights {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+
+.sidebar-menu {
+  display: none;
+}
+
+@media (max-width: 980px) {
+  .highlights {
+    grid-template-columns: 1fr;
+  }
+  .appgrid {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar-menu {
+    display: block;
+  }
+  .sidebar {
+    left: -500px;
+    transition: 0.3s ease-in-out;
+  }
+  .sidebar-open {
+    left: 0px;
+    transition: 0.3s ease-in-out;
+  }
+}
