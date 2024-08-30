@@ -13,6 +13,7 @@ export default function Sidebar({ sidebar }) {
         <div className="mt-[40px]">
           <ul>
             <li className="border-b">
+
               {" "}
               <Link
                 to="/"
@@ -34,6 +35,15 @@ export default function Sidebar({ sidebar }) {
               {" "}
               <Link
                 to="/addproduct"
+                className="inline-block my-2 hover:bg-[#344029] hover:text-[#fffdd0] w-full py-2 rounded px-1"
+              >
+                Add Product
+              </Link>{" "}
+            </li>
+            <li className="border-b">
+              {" "}
+              <Link
+                to="/allproducts"
                 className="inline-block my-2 hover:bg-[#344029] hover:text-[#fffdd0] w-full py-2 rounded px-1"
               >
                 Product Detals

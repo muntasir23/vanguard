@@ -1,28 +1,5 @@
 {
-  "products": [
-    {
-      "id": 1,
-      "name": "maroon",
-      "inStock": 5,
-      "cloth": 410,
-      "sewing": 250,
-      "packaging": 29,
-      "label": 3,
-      "gift": 80,
-      "sellingPrice": 2100
-    },
-    {
-      "id": 2,
-      "name": "olive",
-      "inStock": 5,
-      "cloth": 450,
-      "sewing": 250,
-      "packaging": 29,
-      "label": 3,
-      "gift": 80,
-      "sellingPrice": 2100
-    }
-  ],
+  "products": [],
   "costs": [],
   "invoice": [],
   "order": [],
