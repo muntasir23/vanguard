@@ -52,7 +52,7 @@ export default function AllProduct() {
         </div>
         <div className="flex items-center justify-between">
           <p>
-            Cloth Cost: <strong>{p.cloth}</strong>{" "}
+            Cloth Cost: <strong>{p.cost}</strong>{" "}
           </p>
           <p>
             Sewing Cost: <strong>{p.sewing}</strong>
@@ -60,7 +60,7 @@ export default function AllProduct() {
         </div>
         <div className="flex items-center justify-between">
           <p>
-            Packaging: <strong>{p.packaging}</strong>
+            Packaging: <strong>{p.packging}</strong>
           </p>
           <p>
             Label: <strong>{p.label}</strong>{" "}
@@ -71,13 +71,13 @@ export default function AllProduct() {
             Gift: <strong>{p.gift}</strong>{" "}
           </p>
           <p className="text-blue-600">
-            Selling Price: <strong>{p.sellingPrice}</strong>{" "}
+            Selling Price: <strong>{p.selling}</strong>{" "}
           </p>
         </div>
         <div className="flex items-center justify-between mt-4 border-t pt-2">
           <p className="text-red-600 font-semibold">
             Total Cost of Product:{" "}
-            {p.cloth + p.sewing + p.packaging + p.label + p.gift}
+            {p.cost + p.sewing + p.packging + p.label + p.gift}
           </p>
           <p className="flex items-center gap-2">
             <MdEdit />{" "}

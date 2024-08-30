@@ -102,9 +102,10 @@ const productsSlice = createSlice({
         state.isLoading = true;
       })
       .addCase(removeProduct.fulfilled, (state, action) => {
-        state.isLoading = false;
+        console.log(action);
 
-        state.products = state.products.filter((p) => p.id !== action.payload);
+        state.isLoading = false;
+        state.products = state.products.filter((p) => p.id !== action.meta.arg);
       })
       .addCase(removeProduct.rejected, (state, action) => {
         state.isLoading = false;
