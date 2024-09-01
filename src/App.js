@@ -9,6 +9,7 @@ import AllProduct from "./components/AllProduct";
 import CostSection from "./pages/CostSection";
 import Invoice from "./pages/Invoice";
 import CustomerDetails from "./pages/CustomerDetails";
+import CreateInvoice from "./components/invoices/CreateInvoice";
 
 function App() {
   const [sidebar, setSidebar] = useState(true);
@@ -19,7 +20,7 @@ function App() {
 
   const sidebarClose = () => {
     setSidebar(true);
-  }
+  };
 
   return (
     <BrowserRouter>
@@ -33,6 +34,7 @@ function App() {
             <Route path="/allproducts" element={<AllProduct />}></Route>
             <Route path="/allcost" element={<CostSection />}></Route>
             <Route path="/invoice" element={<Invoice />}></Route>
+            <Route path="/createinvoice" element={<CreateInvoice />}></Route>
             <Route
               path="/customersdetails"
               element={<CustomerDetails />}

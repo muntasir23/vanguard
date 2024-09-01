@@ -1,8 +1,12 @@
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { createCost } from "../../features/costs/costSlice";
 
 export default function AddCost() {
   const [description, setDiscription] = useState("");
   const [amount, setAmount] = useState("");
+
+  const dispatch = useDispatch();
 
   const handleAdd = (e) => {
     e.preventDefault();
@@ -10,6 +14,13 @@ export default function AddCost() {
       description,
       amount: Number(amount),
     });
+
+    dispatch(
+      createCost({
+        description,
+        amount: Number(amount),
+      })
+    );
 
     setAmount("");
     setDiscription("");

@@ -2,8 +2,15 @@ import React from "react";
 import { TfiStatsUp } from "react-icons/tfi";
 import { ImStatsBars } from "react-icons/im";
 import { ImDownload } from "react-icons/im";
+import { useSelector } from "react-redux";
 
 export default function SalesOverViews() {
+  const { costs } = useSelector((state) => state.costs);
+
+  const total = costs.reduce((p, c) => p + c.amount , 0);
+
+
+
   return (
     <div className="sales-overview rounded-md p-2 bg-white shadow">
       <p className="font-bold">Sales Overview</p>
@@ -31,8 +38,8 @@ export default function SalesOverViews() {
             <ImDownload />
           </p>
           <div>
-            <p className="text-[14px]">Costs</p>
-            <p className="text-[22px] font-bold">786</p>
+            <p className="text-[14px]">Total Costs</p>
+            <p className="text-[22px] font-bold">{total || 0}</p>
           </div>
         </div>
       </div>

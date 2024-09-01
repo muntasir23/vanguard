@@ -50,7 +50,7 @@ export default function Sidebar({ sidebar, sidebarClose }) {
                 onClick={sidebarClose}
                 className="inline-block my-2 hover:bg-[#344029] hover:text-[#fffdd0] w-full py-2 rounded px-1"
               >
-                Product Detals
+                Product Details
               </NavLink>{" "}
             </li>
             <li className="border-b">
