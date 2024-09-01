@@ -15,15 +15,18 @@ function App() {
 
   const sidebarOpen = () => {
     setSidebar(!sidebar);
-    console.log("Clicked");
   };
+
+  const sidebarClose = () => {
+    setSidebar(true);
+  }
 
   return (
     <BrowserRouter>
       <Navbar sidebarOpen={sidebarOpen} />
       <div className="w-[100%] grid place-items-center">
         <div className="appgrid w-[100%] ">
-          <Sidebar sidebar={sidebar} />
+          <Sidebar sidebar={sidebar} sidebarClose={sidebarClose} />
           <Routes>
             <Route path="/addproduct" element={<AddProduct />}></Route>
             <Route path="/" element={<Hightlights />}></Route>

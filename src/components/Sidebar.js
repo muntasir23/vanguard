@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-export default function Sidebar({ sidebar }) {
+export default function Sidebar({ sidebar, sidebarClose }) {
   return (
     <div className="relative  top-0">
       <div
@@ -13,59 +13,65 @@ export default function Sidebar({ sidebar }) {
         <div className="mt-[40px]">
           <ul>
             <li className="border-b">
-
               {" "}
-              <Link
+              <NavLink
                 to="/"
-                className="inline-block my-2 hover:bg-[#344029] hover:text-[#fffdd0] w-full py-2 rounded px-1"
+                onClick={sidebarClose}
+                className={`inline-block my-2 hover:bg-[#344029] hover:text-[#fffdd0] w-full \
+                py-2 rounded px-1 ${({ isActive, isPending }) => (isActive ? "active" : "")}`}
               >
                 Home
-              </Link>{" "}
+              </NavLink>{" "}
             </li>
             <li className="border-b">
               {" "}
-              <Link
+              <NavLink
                 to="/customersdetails"
+                onClick={sidebarClose}
                 className="inline-block my-2 hover:bg-[#344029] hover:text-[#fffdd0] w-full py-2 rounded px-1"
               >
                 Customer Details
-              </Link>{" "}
+              </NavLink>{" "}
             </li>
             <li className="border-b">
               {" "}
-              <Link
+              <NavLink
                 to="/addproduct"
+                onClick={sidebarClose}
                 className="inline-block my-2 hover:bg-[#344029] hover:text-[#fffdd0] w-full py-2 rounded px-1"
               >
                 Add Product
-              </Link>{" "}
+              </NavLink>{" "}
             </li>
             <li className="border-b">
               {" "}
-              <Link
+              <NavLink
                 to="/allproducts"
+                onClick={sidebarClose}
                 className="inline-block my-2 hover:bg-[#344029] hover:text-[#fffdd0] w-full py-2 rounded px-1"
               >
                 Product Detals
-              </Link>{" "}
+              </NavLink>{" "}
             </li>
             <li className="border-b">
               {" "}
-              <Link
+              <NavLink
                 to="/invoice"
+                onClick={sidebarClose}
                 className="inline-block my-2 hover:bg-[#344029] hover:text-[#fffdd0] w-full py-2 rounded px-1"
               >
                 Invoices
-              </Link>{" "}
+              </NavLink>{" "}
             </li>
             <li className="border-b">
               {" "}
-              <Link
+              <NavLink
                 to="/allcost"
+                onClick={sidebarClose}
                 className="inline-block my-2 hover:bg-[#344029] hover:text-[#fffdd0] w-full py-2 rounded px-1"
               >
                 Costs
-              </Link>{" "}
+              </NavLink>{" "}
             </li>
           </ul>
         </div>
