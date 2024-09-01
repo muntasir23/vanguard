@@ -6,14 +6,14 @@ import { TbTruckDelivery } from "react-icons/tb";
 export default function OderOverviews() {
   return (
     <div className="order-overview rounded-md p-2 bg-white shadow">
-      <p className="font-bold">Oder Overview</p>
+      <p className="font-bold">Order Overview</p>
       <div className="overview mt-5 grid grid-cols-2 gap-4">
         <div className="flex items-center gap-4 border p-2 rounded">
           <p className="sales-icons bg-cyan-100 p-2 text-[25px] font-semibold text-cyan-600 rounded-md">
             <HiOutlineShoppingBag />
           </p>
           <div>
-            <p className="text-[14px]">Total Oder</p>
+            <p className="text-[14px]">Total Order</p>
             <p className="text-[22px] font-bold">6</p>
           </div>
         </div>
