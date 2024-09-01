@@ -64,7 +64,7 @@ export default function ProductForm() {
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="border-2 border-zinc-300 rounded p-2 w-[100%] mt-2"
+              className="border border-zinc-300 rounded p-2 w-[100%] mt-2"
             />
           </div>
           <div className="w-full">
@@ -74,7 +74,7 @@ export default function ProductForm() {
               type="number"
               value={inStock}
               onChange={(e) => setStock(e.target.value)}
-              className="border-2 border-zinc-300 rounded p-2 w-full mt-2"
+              className="border border-zinc-300 rounded p-2 w-full mt-2"
             />
           </div>
         </div>
@@ -86,7 +86,7 @@ export default function ProductForm() {
               type="number"
               value={cost}
               onChange={(e) => setCost(e.target.value)}
-              className="border-2 border-zinc-300 rounded p-2 w-[100%] mt-2"
+              className="border border-zinc-300 rounded p-2 w-[100%] mt-2"
             />
           </div>
           <div className="w-full">
@@ -96,7 +96,7 @@ export default function ProductForm() {
               type="number"
               value={sewing}
               onChange={(e) => setSewing(e.target.value)}
-              className="border-2 border-zinc-300 rounded p-2 w-full mt-2"
+              className="border border-zinc-300 rounded p-2 w-full mt-2"
             />
           </div>
         </div>
@@ -108,7 +108,7 @@ export default function ProductForm() {
               type="number"
               value={packging}
               onChange={(e) => setPackging(e.target.value)}
-              className="border-2 border-zinc-300 rounded p-2 w-[100%] mt-2"
+              className="border border-zinc-300 rounded p-2 w-[100%] mt-2"
             />
           </div>
           <div className="w-full">
@@ -118,7 +118,7 @@ export default function ProductForm() {
               type="number"
               value={label}
               onChange={(e) => setLabel(e.target.value)}
-              className="border-2 border-zinc-300 rounded p-2 w-full mt-2"
+              className="border border-zinc-300 rounded p-2 w-full mt-2"
             />
           </div>
         </div>
@@ -130,7 +130,7 @@ export default function ProductForm() {
               type="number"
               value={gift}
               onChange={(e) => setGift(e.target.value)}
-              className="border-2 border-zinc-300 rounded p-2 w-[100%] mt-2"
+              className="border border-zinc-300 rounded p-2 w-[100%] mt-2"
             />
           </div>
           <div className="w-full">
@@ -140,7 +140,7 @@ export default function ProductForm() {
               type="number"
               value={selling}
               onChange={(e) => setSelling(e.target.value)}
-              className="border-2 border-zinc-300 rounded p-2 w-full mt-2"
+              className="border border-zinc-300 rounded p-2 w-full mt-2"
             />
           </div>
         </div>

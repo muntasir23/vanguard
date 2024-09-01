@@ -41,7 +41,7 @@ body {
     display: block;
   }
   .sidebar {
-    left: -500px;
+    left: -900px;
     transition: 0.3s ease-in-out;
   }
   .sidebar-open {

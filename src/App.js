@@ -6,6 +6,9 @@ import Sidebar from "./components/Sidebar";
 import { useState } from "react";
 import AddProduct from "./pages.js/AddProduct";
 import AllProduct from "./components/AllProduct";
+import CostSection from "./pages/CostSection";
+import Invoice from "./pages/Invoice";
+import CustomerDetails from "./pages/CustomerDetails";
 
 function App() {
   const [sidebar, setSidebar] = useState(true);
@@ -25,6 +28,12 @@ function App() {
             <Route path="/addproduct" element={<AddProduct />}></Route>
             <Route path="/" element={<Hightlights />}></Route>
             <Route path="/allproducts" element={<AllProduct />}></Route>
+            <Route path="/allcost" element={<CostSection />}></Route>
+            <Route path="/invoice" element={<Invoice />}></Route>
+            <Route
+              path="/customersdetails"
+              element={<CustomerDetails />}
+            ></Route>
           </Routes>
         </div>
       </div>
