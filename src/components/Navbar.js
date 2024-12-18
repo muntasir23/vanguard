@@ -1,7 +1,7 @@
 import React from "react";
-import logo from "../assets/vangurad logo.png";
 import { MdMenu } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
+import logo from "../assets/vangurad logo.png";
 
 export default function Navbar({ sidebarOpen }) {
   const navigate = useNavigate();
@@ -11,7 +11,10 @@ export default function Navbar({ sidebarOpen }) {
   };
 
   return (
-    <div className="w-[100%] grid place-items-center bg-white shadow sticky top-0 ">
+    <div
+    id="print-navbar"
+      className={`w-[100%] grid place-items-center bg-zinc-100 shadow sticky top-0`}
+    >
       <div className="md:w-[1100px] w-[90%] p-3 text-[18px] flex justify-between items-center">
         <img src={logo} alt="logo" className="w-[40px]" />
         <div className="flex justify-center items-center gap-2">

@@ -1,10 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
 import productReducer from "../features/products/productsSlice";
-import costsReducer from "../features/costs/costSlice";
+import invoiceFilterReducer from "../features/invoiceFilter/invoiceFilterSlice";
 
 export const store = configureStore({
   reducer: {
     products: productReducer,
-    costs: costsReducer,
+    invoiceFilter: invoiceFilterReducer,
   },
 });

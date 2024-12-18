@@ -81,3 +81,15 @@ tr:nth-child(odd) {
     padding-left: 15px;
   }
 }
+
+@media print {
+  #print-navbar,
+  #print-sidebar,
+  button {
+    display: none;
+  }
+  .invoice-preview {
+    background: white; /* Ensures the print background is clean */
+    width: 100%;
+  }
+}
