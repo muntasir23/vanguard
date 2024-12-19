@@ -11,6 +11,7 @@ import CostPage from "./pages/CostPage";
 import HomePage from "./pages/HomePage";
 import OrderPage from "./pages/OrderPage";
 import InvoicePreview from "./components/odersection/InvoicePreview";
+import ProductPage from "./pages/ProductPage";
 
 function App() {
   const [sidebar, setSidebar] = useState(true);
@@ -31,7 +32,7 @@ function App() {
           <Sidebar sidebar={sidebar} sidebarClose={sidebarClose} />
           <Routes>
             <Route path="/hi" element={<Hightlights />}></Route>
-            <Route path="/" element={<HomePage/>}></Route>
+            <Route path="/" element={<HomePage />}></Route>
             <Route path="/invoice" element={<Invoice />}></Route>
             <Route path="/createinvoice" element={<CreateInvoice />}></Route>
             <Route path="/costdetails" element={<CostPage />}></Route>
@@ -39,14 +40,9 @@ function App() {
               path="/customersdetails"
               element={<CustomerDetails />}
             ></Route>
-            <Route
-              path="/oderpage"
-              element={<OrderPage />}
-            ></Route>
-            <Route
-              path="/invoicepreview"
-              element={<InvoicePreview />}
-            ></Route>
+            <Route path="/oderpage" element={<OrderPage />}></Route>
+            <Route path="/invoicepreview" element={<InvoicePreview />}></Route>
+            <Route path="/productpage" element={<ProductPage />}></Route>
           </Routes>
         </div>
       </div>
