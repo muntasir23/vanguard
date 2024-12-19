@@ -82,16 +82,23 @@ const AddProduct = () => {
         onClick={() => setSizeChart(!sizeChart)}
         className={`bg-${
           sizeChart ? "red" : "indigo"
-        }-500 text-white px-4 py-2 rounded hover:bg-${
+        }-500 text-white px-4 py-2 mb-5 rounded hover:bg-${
           sizeChart ? " red" : "indigo"
         }-600`}
       >
         {sizeChart ? "Hide Size Chart" : "View Size Chart"}
       </button>
       {/* size chart */}
-      <div className="overflow-hidden w-full border">
+      <div className="overflow-hidden w-full">
         {sizeChart && (
           <SizeForm productName={formData} handleChange={handleChange} />
+        )}
+      </div>
+      <div>
+        {sizeChart && (
+          <button onClick={handleSubmit} className="w-full rounded bg-indigo-600 hover:bg-indigo-800 py-2 text-white">
+            Submit Product Details
+          </button>
         )}
       </div>
     </div>

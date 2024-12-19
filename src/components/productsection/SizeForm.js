@@ -7,13 +7,13 @@ export default function SizeForm({ productName, handleChange }) {
     <div className="mt-5 mb-5 pb-3">
       <h2 className="text-xl font-bold">Add Size Quantity</h2>
       <div className="mt-5 grid grid-cols-6 text-[12px] md:text-[15px]">
-        <h3 className="border border-gray-200 text-gray-800 font-semibold">Garments</h3>
-        <h3 className="border border-gray-200 text-gray-800 font-semibold">M</h3>
-        <h3 className="border border-gray-200 text-gray-800 font-semibold">L</h3>
-        <h3 className="border border-gray-200 text-gray-800 font-semibold">XL</h3>
-        <h3 className="border border-gray-200 text-gray-800 font-semibold">XXL</h3>
-        <h3 className="border border-gray-200 text-gray-800 font-semibold">Total</h3>
-        <h3 className="border border-gray-200">{productName.name}</h3>
+        <h3 className="border bg-zinc-100 border-gray-200 text-gray-800 font-semibold">Garments</h3>
+        <h3 className="border bg-zinc-100 border-gray-200 text-gray-800 font-semibold">M</h3>
+        <h3 className="border bg-zinc-100 border-gray-200 text-gray-800 font-semibold">L</h3>
+        <h3 className="border bg-zinc-100 border-gray-200 text-gray-800 font-semibold">XL</h3>
+        <h3 className="border bg-zinc-100 border-gray-200 text-gray-800 font-semibold">XXL</h3>
+        <h3 className="border bg-zinc-100 border-gray-200 text-gray-800 font-semibold">Total</h3>
+        <h3 className="border  border-gray-200">{productName.name}</h3>
         <input
           name="M"
           type="number"
